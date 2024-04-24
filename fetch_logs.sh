@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Namespace
-NAMESPACE="monitoring"
+NAMESPACE="your_namespace"
 
 # Get current date and time
 CURRENT_DATETIME=$(date +"%Y-%m-%d_%H-%M-%S")
@@ -39,7 +39,7 @@ echo "Creating tar.gz file $ZIP_FILE..."
 tar -czvf "$ZIP_FILE" -C "$LOG_DIR" .
 
 # Copy zip file to local machine
-LOCAL_DIR="C:/Users/shahn/OneDrive/Desktop/Harnil_Cilans/notary-logs"
+LOCAL_DIR="C:/Users/shahn/OneDrive/Desktop/Harnil_Cilans/n-logs"
 mkdir -p "$LOCAL_DIR"
 cp "$ZIP_FILE" "$LOCAL_DIR/"
 
